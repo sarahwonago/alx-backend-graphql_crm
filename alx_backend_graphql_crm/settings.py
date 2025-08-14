@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # third-party apps
     "graphene_django",
+    "django_filters",
     # local apps
     "crm",
 ]
