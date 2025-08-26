@@ -6,6 +6,7 @@ from django.db import IntegrityError
 import re
 from .models import Customer, Product, Order
 from .filters import CustomerFilter, ProductFilter, OrderFilter
+from crm.models import Product
 
 
 # GraphQL Types
