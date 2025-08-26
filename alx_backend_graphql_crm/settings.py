@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     # third-party apps
     "graphene_django",
     "django_filters",
+    "django_crontab",
     # local apps
     "crm",
 ]
@@ -128,3 +129,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Graphene-Django settings
 GRAPHENE = {"SCHEMA": "alx_backend_graphql_crm.schema.schema"}  # Path to schema file
+
+CRONJOBS = [
+    ("*/5 * * * *", "crm.cron.log_crm_heartbeat"),
+]
